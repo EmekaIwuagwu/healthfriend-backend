@@ -25,19 +25,7 @@
     "declarationMap": true,
     "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types"],
-    "moduleResolution": "node",
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"],
-      "@/controllers/*": ["controllers/*"],
-      "@/models/*": ["models/*"],
-      "@/routes/*": ["routes/*"],
-      "@/middleware/*": ["middleware/*"],
-      "@/services/*": ["services/*"],
-      "@/types/*": ["types/*"],
-      "@/utils/*": ["utils/*"],
-      "@/config/*": ["config/*"]
-    }
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"
@@ -47,8 +35,5 @@
     "dist",
     "**/*.test.ts",
     "**/*.spec.ts"
-  ],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+  ]
 }
